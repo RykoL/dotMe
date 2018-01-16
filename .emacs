@@ -145,4 +145,14 @@
 (setq TeX-parse-self t)
 (setq TeX-save-query nil)
 
+;;; Org mode
+(require 'org)
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+
+(setq org-agenda-files (list "~/org/work.org"
+			     "~/org/school.org"
+			     "~/org/home.org"))
+
 ;;; .emacs ends here
